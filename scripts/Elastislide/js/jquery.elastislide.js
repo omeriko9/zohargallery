@@ -476,6 +476,17 @@
 					}
 				} );
 
+                this.$el.on({
+                    mousewheel: function(event) {
+                         if(event.originalEvent.wheelDelta /120 > 0) {
+                           self._slide( 'prev' );
+                        }
+                        else{
+                            self._slide( 'next' );
+                        }
+                    }
+                 });
+
 			}
 
 			// item click event

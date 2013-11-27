@@ -34,9 +34,9 @@
                     <h1>
                         גלריה</h1>
                     <div id="gallerycontainer">
-                        <div id="rightgallery" style="float: right; height: 100%">
-                            <ul id="rightgallerycarousel">
-                                <li id="gallery1" data-preview="images/gallery/g1-1.jpg"><a href="#">
+                        <div id="rightgallery" style="float: right; height: 100%; width:140px !important;text-align: center;vertical-align: middle;">
+                            <ul id="rightgallerycarousel" style="float:none;text-align:center;width:120px !important">
+                                <li id="gallery1" data-preview="images/gallery/g1-1.jpg"><a href="#" >
                                     <div class="imgtitle">
                                         בעלי חיים</div>
                                     <img src="images/gallery/g1-1.jpg" height="80px" alt="בעלי חיים" /></a></li>
@@ -70,23 +70,21 @@
                                     <img src="images/gallery/g8-1.jpg" height="100px" alt="קריקטורה" /></a></li>
                             </ul>
                         </div>
-                        <div class="gallery" style="float: right; width: 580px">
-                            <div class="image-preview" style="margin: 0 auto;">
-                                <a href="images/gallery/g1-1.jpg" style="margin: 20px;">
-                                    <img alt="preview image" id="preview" height="200px" style="margin: 20px;float:right; "
-                                        src="images/gallery/g1-1.jpg" />
-                                </a>
-                                <a href="images/gallery/g1-2.jpg" style="margin: 20px;">
-                                    <img alt="preview image" id="Img1" height="200px" style="float:right;margin:20px;"
-                                        src="images/gallery/g1-2.jpg" />
-                                </a>
-
-                                 <a href="images/gallery/g1-3.jpg" style="margin: 20px;">
-                                    <img alt="preview image" id="Img2" height="200px" style="margin: 20px;float:right; "
-                                        src="images/gallery/g1-3.jpg" />
-                                </a>
-                              
-                            </div>
+                        <div class="gallery" style="width: 580px;float:left; margin:30px;">
+                           
+                                <div class="image-preview" >
+                                    <a href="images/gallery/g1-1.jpg" style="margin: 20px;">
+                                        <img alt="preview image" id="preview" height="200px" style="margin: 20px; float: right;"
+                                            src="images/gallery/g1-1.jpg" />
+                                    </a><a href="images/gallery/g1-2.jpg" style="margin: 20px;">
+                                        <img alt="preview image" id="Img1" height="200px" style="float: right; margin: 20px;"
+                                            src="images/gallery/g1-2.jpg" />
+                                    </a><a href="images/gallery/g1-3.jpg" style="margin: 20px;">
+                                        <img alt="preview image" id="Img2" height="200px" style="margin: 20px; float: right;"
+                                            src="images/gallery/g1-3.jpg" />
+                                    </a>
+                                </div>
+                         
                         </div>
                     </div>
                 </section>
@@ -96,6 +94,7 @@
     <script type="text/javascript" src="scripts/Elastislide/js/jquerypp.custom.js"></script>
     <script type="text/javascript" src="scripts/Elastislide/js/jquery.elastislide.js"></script>
     <script type="text/javascript">
+         
 
         // example how to integrate with a previewer
         var pics = [3,4,4,1,2,1,2,1];
