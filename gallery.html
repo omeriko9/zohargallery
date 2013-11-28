@@ -48,44 +48,7 @@
                     <h1>
                         גלריה</h1>
                     <div id="gallerycontainer">
-                        <!--
-                        <div id="rightgallery" style="float: right; height: 100%; width:140px !important;text-align: center;vertical-align: middle;">
-                            <ul id="rightgallerycarousel" style="float:none;text-align:center;width:120px !important">
-                                <li id="gallery1" data-preview="images/gallery/g1-1.jpg" class="livergallery"><a href="#" >
-                                    <div class="imgtitle">
-                                        בעלי חיים</div>
-                                    <img src="images/gallery/g1-1.jpg" height="80px" alt="בעלי חיים" /></a></li>
-                                <li id="gallery2" data-preview="images/gallery/g2-1.jpg"  class="livergallery"><a href="#">
-                                    <div class="imgtitle">
-                                        פורטרט</div>
-                                    <img src="images/gallery/g2-1.jpg" height="80px" alt="פורטרט" /></a></li>
-                                <li id="gallery3" data-preview="images/gallery/g3-1.jpg"  class="livergallery"><a href="#">
-                                    <div class="imgtitle">
-                                        אבסטרקטי</div>
-                                    <img src="images/gallery/g3-1.jpg" height="100px" alt="אבסטרקטי" /></a></li>
-                                <li id="gallery4" data-preview="images/gallery/g4-1.jpg"  class="livergallery"><a href="#">
-                                    <div class="imgtitle">
-                                        משולב</div>
-                                    <img src="images/gallery/g4-1.jpg" height="100px" alt="משולב" /></a></li>
-                                <li id="gallery5" data-preview="images/gallery/g5-1.jpg"  class="livergallery"><a href="#">
-                                    <div class="imgtitle">
-                                        נוף</div>
-                                    <img src="images/gallery/g5-1.jpg" height="100px" alt="ציור נוף" /></a></li>
-                                <li id="gallery6" data-preview="images/gallery/g6-1.jpg"  class="livergallery"><a href="#">
-                                    <div class="imgtitle">
-                                        ציורי גוף</div>
-                                    <img src="images/gallery/g6-1.jpg" height="100px" alt="ציורי גוף" /></a></li>
-                                <li id="gallery7" data-preview="images/gallery/g7-1.jpg"  class="livergallery"><a href="#">
-                                    <div class="imgtitle">
-                                        ציורי קיר</div>
-                                    <img src="images/gallery/g7-1.jpg" height="100px" alt="ציורי קיר" /></a></li>
-                                <li id="gallery8" data-preview="images/gallery/g8-1.jpg"  class="livergallery"><a href="#">
-                                    <div class="imgtitle">
-                                        קריקטורה</div>
-                                    <img src="images/gallery/g8-1.jpg" height="100px" alt="קריקטורה" /></a></li>
-                            </ul>
-                        </div>
-                        -->
+                      
                         <div class="gallery" style="margin: 30px;">
                             <div class="imgtitle">
                                 בעלי חיים</div>
@@ -115,6 +78,20 @@
                             </a><a href="images/gallery/g2-4.jpg">  
                                 <img alt="preview image" id="Img12"  class="galleryimage" src="images/gallery/g2-4.jpg" />
                             </a>
+
+                             <div class="imgtitle">
+                                ציורי ילדים</div>
+                            <hr />
+                            <div class="desctext">כל דמות אהובה מסרט או סדרה, מצוייר או אמיתי.</div>
+                            <a href="images/gallery/g9-1.jpg">
+                            <img alt="preview image" id="Img18" class="galleryimage" src="images/gallery/g9-1.jpg" />
+                            </a><a href="images/gallery/g9-2.jpg">
+                                <img alt="preview image" id="Img19" class="galleryimage" src="images/gallery/g9-2.jpg" />
+                            </a><a href="images/gallery/g9-3.jpg">
+                                <img alt="preview image" id="Img20"  class="galleryimage" src="images/gallery/g9-3.jpg" />
+                            </a>
+
+
                             <div class="imgtitle">
                                 אבסטרקטי</div>
                             <hr />
@@ -148,6 +125,11 @@
                              <a href="images/gallery/g5-2.jpg">
                                 <img alt="preview image" id="Img15"   class="galleryimage"
                                     src="images/gallery/g5-2.jpg" />
+                            </a>
+
+                              <a href="images/gallery/g5-3.jpg">
+                                <img alt="preview image" id="Img17"   class="galleryimage"
+                                    src="images/gallery/g5-3.jpg" />
                             </a>
 
 
@@ -194,66 +176,9 @@
             $('.gallery a').fancybox();
         });
 
-        /*
-        // example how to integrate with a previewer
-        var pics = [3,4,4,1,2,1,2,1];
-
-        var current = 0;
-        $('#rightgallerycarousel').elastislide({
-        orientation: 'vertical',
-        minItems: 3,   
-        onClick: function (el, pos, evt) {
-      
-        $('.image-preview').children().remove();
-        var gallerynum = parseInt($(el).attr("id").replace("gallery",""));
-        for (var i=0; i<pics[gallerynum-1]; i++)
-        {
-        var src = "images/gallery/g" + gallerynum + '-'+(i+1) +".jpg";
-        var ele='<a href="'+src+'" id="g"'+ gallerynum + '-'+(i+1)+'" style="margin:20px;float:right"><img height="200px" src='+src+' alt="image"'+i+' /></a>';
-        $('.image-preview').append(ele);
-        }
-                
-        evt.preventDefault();
-        $('.image-preview').children().fancybox();
-
-        },
-        });
-
-      
-
-        $preview = $('#preview');
-        $carouselEl = $('#carousel');
-        $carouselItems = $carouselEl.children();
-        //        carousel = $carouselEl.elastislide({
-        //            current: current,
-        //            minItems: 5,
-        //            easing: 'ease-in-out',
-        //            orientation: 'horizontal',
-        //            onClick: function (el, pos, evt) {
-
-        //                changeImage(el, pos);
-        //                evt.preventDefault();
-
-        //            },
-        //            onReady: function () {
-
-        //                changeImage($carouselItems.eq(current), current);
-
-        //            }
-        //        });
-
-        function changeImage(el, pos) {
-
-        $preview.attr('src', el.data('preview'));
-        $carouselItems.removeClass('current-img');
-        el.addClass('current-img');
-        carousel.setCurrent(pos);
-
-        }
-        */
     </script>
     <footer>
-       
+       Powered by lemon juice
     </footer>
     <script src="scripts/global.js" type="text/javascript"></script>
 </body>

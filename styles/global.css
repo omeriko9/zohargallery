@@ -26,6 +26,13 @@ h1
 .social-media-list { width: 280px;}
 .social-media-list li { display:block; float: left; width:33.3%; text-align:center; margin: 0 auto;}
  
+ footer
+ {
+     text-align:center;
+     color:Gray;
+     font-size:x-small;
+     padding:10px;  
+ }
 
 #container
 {
