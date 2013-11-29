@@ -51,7 +51,6 @@ $(window).scroll(function(e) {
     'font-family': 'Tahoma, Geneva, sans-serif',
     
     'text-align': 'center',
-    /*text-shadow: 1px 1px 2px #333333;*/
     'background-color': 'rgba(50, 20, 50, .33)',
     'border-radius': '0px',
     'box-shadow': '0px 6px 15px #CCC',
