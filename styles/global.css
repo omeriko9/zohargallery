@@ -22,13 +22,20 @@ h1
     font-size:xx-large;
     color:rgba(50, 20, 50, .6);
 }
+#logo{
 
-.social-media-buttons { 
-margin:0 auto;
-width:600;
- height:30px;
     padding-top:55px;
+margin: 0 auto;
+width: 890px;	
+    }
+    
+.social-media-buttons { 
+	margin:0 auto;
+	width:600;
+ 	height:30px;
+
     text-align:center;
+    
    
 }
 .social-media-buttons span 

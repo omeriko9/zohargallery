@@ -17,6 +17,9 @@
     position:fixed;
 }
 
+.scroller_anchor{height:0px; margin:0; padding:0;}
+
+
 #menu ul {
     height: auto;
     padding: 8px 0px;
