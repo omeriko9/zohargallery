@@ -24,7 +24,11 @@ h1
     color:rgba(50, 20, 50, .6);
 }
 
-.social-media-buttons { margin:auto; height:30px;}
+.social-media-buttons { 
+margin:auto;
+ height:30px;
+    padding-top:50px;
+}
 .social-media-list { width: 320px;}
 .social-media-list li { display:block; float: left; width:33.3%; text-align:center; margin: 0 auto;}
  
