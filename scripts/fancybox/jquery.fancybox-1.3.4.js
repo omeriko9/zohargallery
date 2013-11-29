@@ -1117,7 +1117,7 @@
 
 		overlayShow : true,
 		overlayOpacity : 0.7,
-		overlayColor : 'rgba(50,20,50,0.5)',
+		overlayColor : 'rgba(0,0,0,0.8)',
 
 		titleShow : true,
 		titlePosition : 'float', // 'float', 'outside', 'inside' or 'over'
