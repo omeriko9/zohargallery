@@ -43,6 +43,7 @@ width: 890px;
 .social-media-buttons span 
 {
     text-align:left;
+    display:inline;
 }
 .social-media-list { width: 320px;}
 .social-media-list li { display:block; float: left; width:33.3%; text-align:center; margin: 0 auto;}
