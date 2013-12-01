@@ -41,7 +41,9 @@
 
    function clearHeight()
          {
-     
-         document.getElementById('iframe').style.height= "0";
-              
+          $('#iframe').hide();
+          $('body',window.parent.document).scrollTop(0);
+      
+          document.getElementById('iframe').style.height= "0";
+       
          }
