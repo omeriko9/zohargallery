@@ -38,7 +38,7 @@
          var the_height=document.getElementById('iframe').contentWindow.document.body.scrollHeight;
          document.getElementById('iframe').style.height= the_height+"px";
            $('#iframe').hide();
-           $('#iframe').fadeIn(700);
+           $('#iframe').fadeIn(400);
            $('#loaderWarp').hide();
             $('#footer').show();
          }
