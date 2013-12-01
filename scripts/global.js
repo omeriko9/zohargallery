@@ -35,10 +35,13 @@
          {
          var the_height=document.getElementById('iframe').contentWindow.document.body.scrollHeight;
          document.getElementById('iframe').style.height= the_height+"px";
+           $('#iframe').hide();
+           $('#iframe').fadeIn(700);
          }
 
    function clearHeight()
          {
-       
-         document.getElementById('iframe').style.height= "400px";
+     
+         document.getElementById('iframe').style.height= "0";
+              
          }
