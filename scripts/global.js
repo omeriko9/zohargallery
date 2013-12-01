@@ -39,20 +39,20 @@
          document.getElementById('iframe').style.height= the_height+"px";
            $('#iframe').hide();
            $('#iframe').fadeIn(400);
-           $('#loaderWarp').hide();
-            $('#footer').show();
+           $('#loaderWarp',window.parent.document).hide();
+            $('#footer',window.parent.document).show();
          }
 
    function clearHeight()
          {
-           $('#loaderWarp').show();
+           $('#loaderWarp',window.parent.document).show();
           	$('#iframe').hide();
           	
         
         	$('body',window.parent.document).scrollTop(0);
          	window.parent.document.getElementById('iframe').style.height= "0";
 
-              	$('#footer').hide();  
+              	$('#footer',window.parent.document).hide();  
          }
 
 
