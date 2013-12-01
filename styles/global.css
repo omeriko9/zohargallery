@@ -37,7 +37,21 @@ h1
     width: 890px;	
     text-align:center;
 }
-     
+
+ #loaderWarp img
+{
+   border-width:0;
+} 
+ #loaderWarp
+{
+    padding-top:55px;
+    margin: 0 auto;
+    width: 890px;	
+    text-align:center;
+    width:100%;
+    position:absolute;
+	display: none;
+}    
 .social-media-buttons 
 { 
 	margin:10px;

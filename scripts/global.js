@@ -37,16 +37,20 @@
          document.getElementById('iframe').style.height= the_height+"px";
            $('#iframe').hide();
            $('#iframe').fadeIn(700);
+           $('#loaderWarp').hide();
+            $('#footer').show();
          }
 
    function clearHeight()
          {
+           $('#loaderWarp').show();
           	$('#iframe').hide();
+          	
         
         	$('body',window.parent.document).scrollTop(0);
          	window.parent.document.getElementById('iframe').style.height= "0";
 
-              
+              	$('#footer').hide();  
          }
 
 
