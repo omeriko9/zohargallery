@@ -4,14 +4,24 @@
     color:black;
     min-height:100%;
     margin:0px;
+}
+
+#mainBody 
+{
+   
     background-image: url("../images/watermark2.jpg");
 }
 
+
 html
 {
-    background-color:White;
     background-size:100%;
     height:100%;
+}
+#mainHtml
+{
+    background-color:White;
+
 }
 
 h1
