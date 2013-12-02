@@ -35,12 +35,31 @@
   
    function calcHeight()
          {
-         var the_height=document.getElementById('iframe').contentWindow.document.body.scrollHeight;
-         document.getElementById('iframe').style.height= the_height+"px";
+         // var the_height=document.getElementById('iframe').contentWindow.document.body.scrollHeight;
+         var the_height;
+         var F = document.getElementById("iframe");
+		if(F.contentDocument) {
+			the_height = F.contentDocument.documentElement.scrollHeight; 
+			} 
+		else {
+			the_height = F.contentWindow.document.body.scrollHeight; 
+			}
+       
+        
+         
            $('#iframe').hide();
+            $('#iframe')[0].style.height=the_height+"px";
            $('#iframe').fadeIn(400);
            $('#loaderWarp',window.parent.document).hide();
             $('#footer',window.parent.document).show();
+                    // window.alert(the_height);
+                     if (the_height=='0'){
+                     calcHeight();
+                    // delay(calcHeight,1000);
+        
+        }
+        
+
          }
 
    function clearHeight()
