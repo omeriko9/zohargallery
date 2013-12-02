@@ -32,6 +32,7 @@ h1
 
 #logo
 {
+	padding-bottom: 20px;
     padding-top:55px;
     margin: 0 auto;
     width: 890px;	
@@ -50,7 +51,12 @@ h1
     text-align:center;
     width:100%;
     position:absolute;
-}    
+} 
+/*  
+.fb_edge_widget_with_comment span.fb_edge_comment_widget iframe.fb_ltr {
+    position:absolute;
+    bottom: 70px;
+} */
 .social-media-buttons 
 { 
 	margin:10px;
