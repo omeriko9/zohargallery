@@ -51,6 +51,8 @@ var page = getParameterByName("p")
 if (page != "") {
     clearHeight(page);
 }
+else
+    clearHeight('welcome.html');
 
 
 function prepFancyBox() {
