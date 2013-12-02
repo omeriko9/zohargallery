@@ -7,43 +7,23 @@
     <meta charset="utf-8">
     <link href="styles/gallery.css" rel="stylesheet" type="text/css" />
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
-   
+  
             <script src="scripts/global.js" type="text/javascript"></script>
+            <script>
+            	$(function()
+            	{
+            		parent.prepFancyBox();
+            	});
+            </script>
 
 </head>
 <body>
-    <div id="fb-root">
-    </div>
-    <div id="menu">
-        <ul>
-            <li><a href="index.html">ברוכים הבאים</a></li>
-            <li><a href="gallery.html">גלריה</a></li>
-            <li><a href="order.html" id="order">הזמנת ציור</a></li>
-            <li><a href="contact.html">צור קשר</a></li>
-            <li><a href="faq.html">שאלות נפוצות</a></li>
-        </ul>
-    </div>
-      <div id="logo">
-                                 <img src="images/logo3.png" style="vertical-align: top;" " />
-
-     </div>
-
-     <div class="social-media-buttons" >
-        <span style="height:29px !important;overflow:hidden;" class="fb-like" data-href="http://zohargallery.omeriko9.com/index.html" data-width="200"
-            data-layout="button" data-action="like" data-show-faces="false" data-share="true">
-        </span>
-         <span style="width:250px;overflow:hidden;"  class="g-plus" data-action="share" data-height="30">
-                    </span>
-                    <span  style="vertical-align:top;">
-                   <a href="https://twitter.com/share" class="twitter-share-button" data-via="omeriko_9" data-size="large"></a>
-                    </span>
-    </div>
-
+   
 
     <div id="container">
-        <div id="transparent">
+        <div id="transparent"  style="margin:0;>
             <div class="centerdiv">
-                <section>
+                <section style="padding-right: 20px;">
                     <h1>
                         גלריה</h1>
                     <div id="gallerycontainer">
@@ -55,31 +35,18 @@
                             <div >
                             דיוקן יחיד/זוגי/קבוצתי כרצונכם - בצבע או בעפרון.
                             </div>
-							<a href="images/gallery/g2-5.jpg">
+							<a href="images/gallery/g2-5.jpg"  class="fancybox fancybox.iframe">
                                 <img alt="preview image" id="Img2-5"  class="galleryimage" src="images/gallery/preview/g2-5.jpg" />
                             </a>
-                            <a href="images/gallery/g2-1.jpg">
+                            <a href="images/gallery/g2-1.jpg" class="fancybox fancybox.iframe">
                                 <img alt="preview image" id="Img1"  class="galleryimage" src="images/gallery/preview/g2-1.jpg" />
-                            </a><a href="images/gallery/g2-2.jpg">  
+                            </a><a href="images/gallery/g2-2.jpg" class="fancybox fancybox.iframe">  
                                 <img alt="preview image" id="Img10"  class="galleryimage" src="images/gallery/preview/g2-2.jpg" />
-                            </a><a href="images/gallery/g2-3.jpg">                                          
+                            </a><a href="images/gallery/g2-3.jpg" class="fancybox fancybox.iframe">                                          
                                 <img alt="preview image" id="Img11"  class="galleryimage" src="images/gallery/preview/g2-3.jpg" />
-                            </a><a href="images/gallery/g2-4.jpg">                                           
+                            </a><a href="images/gallery/g2-4.jpg" class="fancybox fancybox.iframe">                                           
                                 <img alt="preview image" id="Img12"  class="galleryimage" src="images/gallery/preview/g2-4.jpg" />
                             </a>
-							<a href="images/gallery/g11-18.jpg" >
-                                <img alt="preview image" id="Img11-18" class="galleryimage"
-                                    src="images/gallery/preview/g11-18.jpg" />
-                            </a>
-                            <a href="images/gallery/g11-19.jpg" >
-                                <img alt="preview image" id="Img11-19" class="galleryimage"
-                                    src="images/gallery/preview/g11-19.jpg" />
-                            </a>
-                            <a href="images/gallery/g11-17.jpg" >
-                                <img alt="preview image" id="Img11-17" class="galleryimage"
-                                    src="images/gallery/preview/g11-17.jpg" />
-                            </a>
-
                             <div class="imgtitle">
                                 בעלי חיים</div>
                             <hr />
@@ -109,8 +76,6 @@
                                 <img alt="preview image" id="Img9-4"  class="galleryimage" src="images/gallery/preview/g9-4.jpg" />
                             </a><a href="images/gallery/g9-5.jpg">
                                 <img alt="preview image" id="Img9-5"  class="galleryimage" src="images/gallery/preview/g9-5.jpg" />
-                            </a><a href="images/gallery/g9-6.jpg">
-                                <img alt="preview image" id="Img9-6"  class="galleryimage" src="images/gallery/preview/g9-6.jpg" />
                             </a>
 
 
@@ -128,6 +93,15 @@
                                 <img alt="preview image" id="Img3-4"  class="galleryimage" src="images/gallery/preview/g3-4.jpg" />
                             </a><a href="images/gallery/g3-5.jpg">
                                 <img alt="preview image" id="Img3-5"  class="galleryimage" src="images/gallery/preview/g3-5.jpg" />
+                            </a>
+                            <div class="imgtitle">
+                                משולב</div>
+                            <hr />
+                            <div >
+                            ציור פנים של חבר או חברה בשילוב גוף של גיבור על, זמרת מפורסמת, שחקן כדורגל או דמות היסטורית יכול להיות מתנה נהדרת! כל שעליכם לעשות הוא לשלוח תמונת פנים של חבר או חברה ותמונת בסיס (אפשר גם לשלוח קישור), בצירוף הערות או הנחיות - אם יש.
+                            </div>
+                            <a href="images/gallery/g4-1.jpg">
+                                <img alt="preview image" id="Img4"  class="galleryimage" src="images/gallery/preview/g4-1.jpg" />
                             </a>
 
                             <div class="imgtitle">
@@ -201,18 +175,6 @@
                                 <img alt="preview image" id="Img10-2" class="galleryimage"
                                     src="images/gallery/preview/g10-2.jpg" />
                             </a>
-							
-							<div class="imgtitle">
-                                משולב</div>
-                            <hr />
-                            <div >
-                            ציור פנים של חבר או חברה בשילוב גוף של גיבור על, זמרת מפורסמת, שחקן כדורגל או דמות היסטורית יכול להיות מתנה נהדרת! כל שעליכם לעשות הוא לשלוח תמונת פנים של חבר או חברה ותמונת בסיס (אפשר גם לשלוח קישור), בצירוף הערות או הנחיות - אם יש.
-                            </div>
-                            <a href="images/gallery/g4-1.jpg">
-                                <img alt="preview image" id="Img4"  class="galleryimage" src="images/gallery/preview/g4-1.jpg" />
-                            </a>
-
-							
                             <div class="imgtitle">
                                 רישום</div>
                             <hr />
@@ -281,6 +243,18 @@
                                 <img alt="preview image" id="Img11-16" class="galleryimage"
                                     src="images/gallery/preview/g11-16.jpg" />
                             </a>
+                            <a href="images/gallery/g11-17.jpg" >
+                                <img alt="preview image" id="Img11-17" class="galleryimage"
+                                    src="images/gallery/preview/g11-17.jpg" />
+                            </a>
+                            <a href="images/gallery/g11-18.jpg" >
+                                <img alt="preview image" id="Img11-18" class="galleryimage"
+                                    src="images/gallery/preview/g11-18.jpg" />
+                            </a>
+                            <a href="images/gallery/g11-19.jpg" >
+                                <img alt="preview image" id="Img11-19" class="galleryimage"
+                                    src="images/gallery/preview/g11-19.jpg" />
+                            </a>
                             <a href="images/gallery/g11-21.jpg" >
                                 <img alt="preview image" id="Img11-21" class="galleryimage"
                                     src="images/gallery/preview/g11-21.jpg" />
@@ -291,22 +265,12 @@
                             </a>
                         </div>
                         <div style="width:90%;text-align:left;margin-bottom:20px;margin-top:-20px;">
-                        	<a href="order.html" class="sitebutton">להזמנה&nbsp;&nbsp;</a>
+                        	<a href="order.html"  target="iframe"  onclick="clearHeight();" class="sitebutton">להזמנה&nbsp;&nbsp;</a>
                         </div>
                     </div>
                 </section>
             </div>
         </div>
     </div>
-    <script type="text/javascript">
-
-        $(document).ready(function () {
-           // $('.gallery a').fancybox();
-        });
-
-    </script>
-    <footer>
-       Powered by lemon juice
-    </footer>
 </body>
 </html>
