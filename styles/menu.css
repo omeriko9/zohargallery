@@ -39,7 +39,8 @@ padding: 20px;
 a[id=order] 
 {
     font-size:larger;
-    color:Yellow !important;
+    font-weight:bold;
+    /*color:#FFCC00 !important;*/
 }
 
 a[id=order]:hover,

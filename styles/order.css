@@ -1,0 +1,47 @@
+﻿body {
+}
+
+.display_paintings {
+    line-height: 30px;
+    display: inline;
+    list-style: none;
+}
+
+.display_paintings li{
+    display:inline-block;
+    
+}
+
+.display_paintings div {
+    display:inline-block;
+    line-height:18px;
+    margin:20px;
+    vertical-align:top;
+}
+
+.display_paintings div img 
+{
+    width:300px;
+}
+
+.display_paintings div span.painting_name 
+{
+    font-size:large;
+    font-weight:bold;
+    line-height:27px;
+    color:black;    
+}
+
+.display_paintings div span.painting_price 
+{
+    font-size:medium;
+    font-weight:bold;
+    color:#003300;    
+}
+
+.display_paintings div span
+{
+    font-size:small;
+    color:gray;
+    display:block;
+}
