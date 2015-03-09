@@ -22,6 +22,10 @@ function prepFancyBox() {
     $('#iframe').contents().find(".gallery a").fancybox();
 }
 
+function prepFancyBoxOrder() {
+    $('#iframe').contents().find(".display_paintings a").fancybox();
+}
+
 $(document).ready(function () {
     checkDOMChange();
     $('#menu a[id=order]').animate({ color: '#FF0000' }, 'slow');
