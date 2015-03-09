@@ -1,4 +1,5 @@
 ﻿body {
+    overflow:hidden;
 }
 
 .display_paintings {
@@ -19,7 +20,12 @@
     vertical-align:top;
 }
 
-.display_paintings div img 
+/*.display_paintings div img 
+{
+    width:300px;
+}*/
+
+img.lazy
 {
     width:300px;
 }
